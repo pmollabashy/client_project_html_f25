@@ -1,0 +1,198 @@
+html{
+  scroll-behavior: smooth;
+  font-family: Montserrat, sans-serif;
+}
+
+.skip a {
+  background: white;
+  position: absolute;
+  top: -65px;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus,
+.skip a:active {
+  top: 0;
+}
+
+nav li {
+  margin-bottom: 4px;
+}
+
+nav a {
+  display: grid;
+  background-color: #eee;
+  color: #00274C;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #FFCB05;
+  color: #00274C;
+  outline: 2px solid #FFCB05;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1;
+  text-align: center;
+  padding: 50px 0;
+  color: #00274C;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00274C;
+}
+
+h3 strong {
+  font-weight: bold;
+}
+
+body{
+  font-size: 18px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+/* For following 3 sections, googled how to add bullets and numbering to lists. */
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li strong {
+  font-weight: bold;
+}
+
+/* For following 3 sections, asked UM-GPT to make items responsive.
+Prompt: when i go live on my page, all the items on it are different sizes, and a lot of them are larger than the space provided, so i end up having to scroll horizontally in order to be able to see the whole thing. for example, one of the images is so big that i have to scroll all the way to the right. how can i fix this? */
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+main, section {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 0.5em;
+}
+
+.start-popular-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.main-links,
+.popular-resources {
+  background: #f4f4f4;
+  padding: 1em;
+}
+
+.main-links h3,
+.popular-resources h3 {
+  margin-bottom: 0.8em;
+  font-weight: bold;
+  color: #00274C;
+}
+
+.main-links ul, .popular-resources ul {
+  padding-left: 1.2em;
+  font-size: 1em;
+}
+.main-links li, .popular-resources li {
+  margin-bottom: .5em;
+}
+
+.faq-grid {
+  display: grid;
+  row-gap: 20px;
+}
+
+.faq-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  column-gap: 24px;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.overview{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+}
+
+
+.overview p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+footer{
+  background-color: #00274C;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: #FFCB05;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+}
