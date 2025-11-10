@@ -16,7 +16,7 @@
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
                 <li><a href = "networking.html">Networking & Connections</a></li>
-                <li><a href = "career.html">Career Exploration</a></li>
+                <li><a href = "career.html" class="active">Career Exploration</a></li>
             </ul>
         </nav>
         <h1>Career Exploration</h1>
@@ -50,7 +50,7 @@
 
 <section>
     <h2>Career Resources</h2>
-    <ul>
+    <ul class="card-list">
       <li>
         <a href="https://www.si.umich.edu/student-experience/career-development" target="_blank">
         Career Development
@@ -87,12 +87,6 @@
         </a>
         <p>All about internships, including internship reports and information on internship courses.</p>
         </li>
-              <li>
-        <a href="https://www.si.umich.edu/student-experience/internships/student-internship-experiences" target="_blank">
-          Student Internship Experiences
-        </a>
-        <p>Stories from UMSI students about their internship experiences.</p>
-      </li>
     </ul>
 <p>More resources can be found in the <a href="https://umich.instructure.com/courses/137916/modules" target="_blank">Career Exploration and Job/Internship Search Module</a> on the CDO Canvas site.</p>
   </section>
@@ -100,7 +94,16 @@
     </main>
     <footer>
         <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>Connect:
+        <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/umschoolofinformation/#" target="_blank">Instagram</a> |
+        <a href="https://x.com/umsi" target="_blank">X</a> |
+        <a href="https://www.facebook.com/uomsi/" target="_blank">Facebook</a> |
+        <p><a href="https://www.si.umich.edu/about-umsi/contact-us" target="_blank">Contact Us</a></p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
         </footer>
-
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>

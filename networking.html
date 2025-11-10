@@ -15,7 +15,7 @@
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "networking.html">Networking & Connections</a></li>
+                <li><a href = "networking.html" class="active">Networking & Connections</a></li>
                 <li><a href = "career.html">Career Exploration</a></li>
             </ul>
         </nav>
@@ -39,12 +39,11 @@
     <section>
     <h2>How to Network: A Brief Tutorial</h2>
     <h3>Networking Tips & Tricks for Career Success</h3>
-    <ul>
+    <ul class="card-list">
         <li><strong>When to Start:</strong> It's never too early to begin building your network. Join clubs, attend networking events, and connect with classmates and professors, whether that's in the classroom or on platforms like LinkedIn.</li>
         <li><strong>Be Genuine:</strong> Networking isn't simply about knowing as many people as possible. Build real, meaningful relationships with people by exhibiting genuine interest in them and what they do.</li>
         <li><strong>Sell Yourself:</strong> What's interesting about you? Why should people want to work with you? Prepare an <a href="https://docs.google.com/document/d/1633aBaWXIZW_ImTP-jKKN0QNXK9-RpXXmVznRgA4ZHQ/edit?tab=t.0">elevator pitch</a> to teach others about who you are, what you're good at, and what you're seeking.</li>
         <li><strong>Keep Connections Alive:</strong> After speaking with someone, follow up with them to express your appreciation for their time. Keep your connections alive by regularly engaging with your network. Attend events, send messages back and forth, and engage on social media to keep conversations going.</li>
-        <li><strong>Your Value:</strong> What can you offer your connections? Networking isn't one-sided. Look for ways you can help your peers, like sharing resources, offering advice, or inviting people to events.</li>
     </ul>
     </section>
 
@@ -52,7 +51,7 @@
 
     <section>
     <h2>Networking Resources</h2>
-    <ul>
+    <ul class="card-list">
       <li>
         <a href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?tab=t.0" target="_blank">
           Building a LAMP List
@@ -89,12 +88,6 @@
         </a>
         <p>Platform to connect with University of Michigan alumni for networking and mentorship opportunities.</p>
       </li>
-       <li>
-        <a href="https://docs.google.com/presentation/d/1dwwMvJIaR2lH_t25Pwnw8otHhWx3ww_46mWm3bARzo8/edit?slide=id.g2a97049686b_0_303#slide=id.g2a97049686b_0_303" target="_blank">
-          Conference Prep Guide
-        </a>
-        <p>Presentation by the CDO on how to make the most of conferences.</p>
-      </li>
 </ul>
 <p>All these resources and more can be found in the <a href="https://umich.instructure.com/courses/137916/modules#module_218605" target="_blank">Networking and Building Connections Module</a> on the CDO Canvas site.</p>
     </section>
@@ -102,7 +95,16 @@
     </main>
     <footer>
         <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>Connect:
+        <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/umschoolofinformation/#" target="_blank">Instagram</a> |
+        <a href="https://x.com/umsi" target="_blank">X</a> |
+        <a href="https://www.facebook.com/uomsi/" target="_blank">Facebook</a> |
+        <p><a href="https://www.si.umich.edu/about-umsi/contact-us" target="_blank">Contact Us</a></p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
         </footer>
-
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>

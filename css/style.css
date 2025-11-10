@@ -40,6 +40,13 @@ nav a:focus {
   outline: 2px solid #FFCB05;
 }
 
+nav a.active {
+  background-color: #00274C;
+  color: #FFCB05;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
 h1 {
   font-size: 50px;
   line-height: 1;
@@ -92,6 +99,28 @@ nav ul {
 
 li strong {
   font-weight: bold;
+}
+
+.card-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.card-list li {
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1em;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+a:visited {
+  color: #00274C;
 }
 
 /* For following 3 sections, asked UM-GPT to make items responsive.
@@ -195,4 +224,48 @@ footer a:visited {
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
+}
+
+@media (min-width: 900px) {
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 14px 32px;
+  font-size: 1em;
+  border-radius: 6px;
+  font-weight: bold;
+  background: white;
+  color: #00274C;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a.active {
+  background: #00274C;
+  color: #FFCB05;
+}
+
+.start-popular-grid,
+.networking-grid,
+.card-list {
+  grid-template-columns: 1fr 1fr;
+}
+
+.faq-item {
+  grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
+}
+
+footer {
+  padding: 40px 0;
+}
+
 }

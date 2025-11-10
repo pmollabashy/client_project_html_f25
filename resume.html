@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
+                <li><a href = "resume.html" class="active">Resumes</a></li>
                 <li><a href = "networking.html">Networking & Connections</a></li>
                 <li><a href = "career.html">Career Exploration</a></li>
             </ul>
@@ -53,7 +53,7 @@
   <section class="resume-grid">
     <section class="resume-resources">
       <h2>Resume Resources</h2>
-      <ul>
+      <ul class="card-list">
         <li>
           <a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0" target="_blank">
             UMSI Resume Guide and Rubric
@@ -111,8 +111,17 @@
     </main>
     <footer>
         <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>Connect:
+        <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/umschoolofinformation/#" target="_blank">Instagram</a> |
+        <a href="https://x.com/umsi" target="_blank">X</a> |
+        <a href="https://www.facebook.com/uomsi/" target="_blank">Facebook</a> |
+        <p><a href="https://www.si.umich.edu/about-umsi/contact-us" target="_blank">Contact Us</a></p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
         </footer>
-
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 
 </html>
